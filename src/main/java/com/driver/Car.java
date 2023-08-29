@@ -82,12 +82,12 @@ public class Car extends Vehicle {
 
     public void changeGear(int newGear){
         setCurrentGear(newGear);
-        System.out.println("changeGear method called - The gear is changed to: " + newGear);
+        System.out.println("changeGear method called - The gear is changed to: " + getCurrentGear());
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
         setCurrentSpeed(newSpeed);
         setCurrentDirection(newDirection);
-        System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
+        System.out.println("changeSpeed method called - The speed is changed to: " + getCurrentSpeed() + ", and the direction is changed to: " + getCurrentDirection() + " degrees");
     }
 }
